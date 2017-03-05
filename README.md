@@ -25,18 +25,18 @@ $ appium-doctor --android
 
 ## Run tests
 
-#### start Appium server (from this folder):
+#### Start Appium server (from this folder):
 
 ```bash
 ./node_modules/.bin/appium
 ```
 
-#### run tests:
+#### Run tests:
 ```bash
 # Run all the tests:
 ./node_modules/.bin/mocha test/wp/publish.js
 
 # Run all the tests with all Appium command traffic in Charles proxy (https://www.charlesproxy.com/):
-NODE_CONFIG='{"proxy": "http://127.0.0.1:8888"}' ./node_modules/.bin/mocha test/wp/sample.js
+NODE_CONFIG='{"proxy": "http://127.0.0.1:8888"}' ./node_modules/.bin/mocha test/wp/publish.js
 ```
 
