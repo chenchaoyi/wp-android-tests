@@ -1,0 +1,11 @@
+{
+  "name": "cyancat-walmart-account-example",
+  "version": "0.0.2",
+  "dependencies": {
+    "appium": "1.6.3",
+    "chai": "^3.5.0",
+    "config": "^1.24.0",
+    "cyancat": "0.0.9",
+    "mocha": "^3.2.0"
+  }
+}

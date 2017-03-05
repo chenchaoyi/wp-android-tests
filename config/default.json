@@ -1,0 +1,11 @@
+{
+  "env": "production",
+  "server": "http://localhost:4723/wd/hub",
+  "capabilities": {
+    "platformName": "Android",
+    "deviceName": "Android Emulator",
+    "avd": "Nexus_5X_Automattic",
+    "sendKeyStrategy": "setValue",
+    "app": "./app/WordPress-vanilla-debug.apk"
+  }
+}
