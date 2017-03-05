@@ -6,6 +6,7 @@ Android App test automation for WordPress using Appium
 ## Setup
 
 * Install Android Studio
+* Create AVD from Android Studio
 * Install [Node.js >= v4.2.3 and npm](http://nodejs.org/)
 * Clone this repo and install npm package dependencies:
 ```
