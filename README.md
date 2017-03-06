@@ -9,8 +9,10 @@ Android App test automation for WordPress using Appium
 * Create AVD from Android Studio
 * Install [Node.js >= v4.2.3 and npm](http://nodejs.org/)
 * Clone this repo and install npm package dependencies:
-```
-npm install
+```shell
+$ git clone git@github.com:chenchaoyi/wp-android-tests.git
+$ cd wp-android-tests
+$ npm install
 ```
 
 Note: For the first time running the tests:
@@ -26,14 +28,14 @@ $ appium-doctor --android
 
 ## Run tests
 
-#### Start Appium server (from this folder):
+#### First start Appium server:
 
-```bash
+```shell
 ./node_modules/.bin/appium
 ```
 
-#### Run tests:
-```bash
+#### Then from another terminal window:
+```shell
 # Run all the tests:
 ./node_modules/.bin/mocha test/wp/publish.js
 
