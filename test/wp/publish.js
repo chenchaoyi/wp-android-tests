@@ -9,20 +9,28 @@ describe('Publish new post user flow', function() {
 
   beforeEach(function(done) {
     driver.run(function() {
-      //test.pages.home.disableAlert(driver);
+      test.pages.signin.signIn(driver);
+      test.pages.mysite.goToMySite(driver);
       done();
     });
   });
 
-  it('Creat new post [C001] @smoke', function(done) {
+  it('Publish a new post with valid title, text content and an image gallery of two jpg images in it [C001] @smoke', function(done) {
     driver.run(function() {
-      test.pages.signin.signIn(driver);
-      test.pages.mysite.goToMySite(driver);
       test.pages.mysite.createNewPost(driver);
       test.pages.editor.editNewPost(driver);
       test.pages.editor.createGallery(driver);
       test.pages.editor.publishPost(driver);
-      driver.sleep(5000);
+      driver.sleep(2000);
+      done();
+    });
+  });
+
+  it('Edit gallery before publish [C002] @smoke', function(done) {
+    driver.run(function() {
+      test.pages.mysite.createNewPost(driver);
+      test.pages.editor.createGallery(driver);
+      driver.sleep(2000);
       done();
     });
   });
