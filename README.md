@@ -39,6 +39,9 @@ $ appium-doctor --android
 # Run all the tests:
 ./node_modules/.bin/mocha test/wp/publish.js
 
+# Run all the tests with Magellan runner:
+./node_modules/.bin/magellan --seriral --max_test_attempts=1
+
 # Run all the tests with all Appium command traffic in Charles proxy (https://www.charlesproxy.com/):
 NODE_CONFIG='{"proxy": "http://127.0.0.1:8888"}' ./node_modules/.bin/mocha test/wp/publish.js
 ```

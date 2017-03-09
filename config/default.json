@@ -1,8 +1,11 @@
 {
   "env": "production",
   "server": "http://localhost:4723/wd/hub",
+  "remoteAppName": "wp.apk",
   "capabilities": {
+    "appiumVersion": "1.6.3",
     "platformName": "Android",
+    "platformVersion": "7.1",
     "deviceName": "Android Emulator",
     "avd": "Nexus_5X_Automattic",
     "sendKeyStrategy": "setValue",
