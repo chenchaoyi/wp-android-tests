@@ -2,12 +2,15 @@
   "env": "production",
   "server": "http://localhost:4723/wd/hub",
   "remoteAppName": "wp.apk",
+  "locale": "en-US",
   "capabilities": {
     "appiumVersion": "1.6.3",
+    //"locale": "en_US",
+    //"language": "en",
     "platformName": "Android",
     "platformVersion": "7.1",
     "deviceName": "Android Emulator",
-    "avd": "Nexus_5X_Automattic",
+    "avd": "Pixel_Automattic",
     "sendKeyStrategy": "setValue",
     "app": "./app/WordPress-vanilla-debug.apk"
   }

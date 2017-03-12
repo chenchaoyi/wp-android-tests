@@ -44,5 +44,9 @@ $ appium-doctor --android
 
 # Run all the tests with all Appium command traffic in Charles proxy (https://www.charlesproxy.com/):
 NODE_CONFIG='{"proxy": "http://127.0.0.1:8888"}' ./node_modules/.bin/mocha test/wp/publish.js
+
+# Run all the tests with different locale (en-US by default):
+NODE_CONFIG='{"locale": "zh-rCN"}' ./node_modules/.bin/mocha test/wp/publish.js
+
 ```
 
