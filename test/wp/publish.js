@@ -26,14 +26,13 @@ describe('Publish new post user flow', function() {
     });
   });
 
-/*
   it('Update gallery before publish [C002] @smoke', function(done) {
     driver.run(function() {
       test.pages.mysite.createNewPost(driver);
       test.pages.editor.editNewPost(driver);
       test.pages.editor.createAndUpdateGallery(driver, true);
       test.pages.editor.publishPost(driver);
-      driver.sleep(5000);
+      driver.sleep(2000);
       done();
     });
   });
@@ -49,6 +48,5 @@ describe('Publish new post user flow', function() {
       done();
     });
   });
-  */
 
 });
