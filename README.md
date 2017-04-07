@@ -50,3 +50,6 @@ NODE_CONFIG='{"locale": "zh-rCN"}' ./node_modules/.bin/mocha test/wp/publish.js
 
 ```
 
+## License
+Licensed under the [MIT](http://opensource.org/licenses/MIT)
+

@@ -2,6 +2,7 @@
   "name": "wp-android-test",
   "version": "0.0.2",
   "author": "Chaoyi Chen <ccy.chenchaoyi@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "appium": "1.6.3",
     "chai": "^3.5.0",
